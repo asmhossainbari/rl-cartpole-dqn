@@ -20,6 +20,8 @@ Once episode ends, the agent restarts the environment
 
 Random agent has no intelligence, no strategy, no learning. Only luck determines how long the pole stays upright.
 '''
+print("Observation space:", gym.make("CartPole-v1").observation_space)
+print("Action space:", gym.make("CartPole-v1").action_space)
 
 def run_random_agent(episodes=5, max_steps=500, render=False):
     env = gym.make(id="CartPole-v1", render_mode="human" if render else None)
